@@ -1,0 +1,42 @@
+name: Weekly Refresh
+
+on:
+  schedule:
+    # 每周一 03:17 UTC（北京时间 11:17），避开整点拥堵
+    - cron: '17 3 * * 1'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Refresh timestamps in README
+        run: |
+          set -e
+          TODAY=$(date -u +%Y-%m-%d)
+          if grep -q '^> 📅 最后更新：' README.md; then
+            sed -i "s|^> 📅 最后更新：.*|> 📅 最后更新：$TODAY · 节点与套餐信息实时同步|" README.md
+          else
+            printf '> 📅 最后更新：%s · 节点与套餐信息实时同步\n\n' "$TODAY" | cat - README.md > /tmp/README.new
+            mv /tmp/README.new README.md
+          fi
+          echo "$TODAY" > .last-refresh
+
+      - name: Commit and push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add README.md .last-refresh
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+            exit 0
+          fi
+          git commit -m "chore: weekly refresh $(date -u +%Y-%m-%d)"
+          git push
