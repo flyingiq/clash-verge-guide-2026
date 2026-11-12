@@ -1,4 +1,4 @@
-> 📅 最后更新：2026-11-09 · 节点与套餐信息实时同步
+> 📅 最后更新：2026-11-12 · 节点与套餐信息实时同步
 
 # 🧩 Clash Verge Rev 完整使用指南（2026）
 
@@ -6,7 +6,7 @@
 > 适合 Windows / macOS / Linux 桌面端用户。
 
 [![Platform](https://img.shields.io/badge/Platform-Windows%20%7C%20macOS%20%7C%20Linux-blue)]()
-[![Updated](https://img.shields.io/badge/Updated-2026--11-brightgreen)]()
+[![Updated](https://img.shields.io/badge/Updated-2026--11--12-brightgreen)]()
 [![Guide](https://img.shields.io/badge/Type-Tutorial-orange)]()
 
 📖 配套机场推荐与节点测速：[2026 最新平价稳定机场推荐](https://github.com/flyingiq/airport-recommended-2026)
