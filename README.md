@@ -6,6 +6,7 @@
 > 适合 Windows / macOS / Linux 桌面端用户。
 
 [![Platform](https://img.shields.io/badge/Platform-Windows%20%7C%20macOS%20%7C%20Linux-blue)]()
+[![TG Group](https://img.shields.io/badge/TG%20%E4%BA%A4%E6%B5%81%E7%BE%A4-%E5%8A%A0%E5%85%A5-2CA5E0.svg?style=flat-square&logo=telegram)](https://t.me/+5IxXmEOGFHczY2E1)
 [![Updated](https://img.shields.io/badge/Updated-2026--11--12-brightgreen)]()
 [![Guide](https://img.shields.io/badge/Type-Tutorial-orange)]()
 
@@ -167,3 +168,13 @@ rules:
 ## 许可
 
 文档内容 MIT。工具版权归各自项目所有。
+
+---
+
+## 💬 配置卡住了？
+
+加入官方交流群，群里有人帮你配：
+
+👉 **[https://t.me/+5IxXmEOGFHczY2E1](https://t.me/+5IxXmEOGFHczY2E1)**
+
+漏单 / 退款请私聊客服 **@flyingiq_bot**（附注册邮箱 + 订单号 + 付款截图）。
